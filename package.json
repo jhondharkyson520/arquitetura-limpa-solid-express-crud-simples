@@ -1,0 +1,24 @@
+{
+  "name": "clean-architecture-crud",
+  "version": "1.0.0",
+  "description": "CRUD de usuários seguindo Clean Code, Clean Architecture e SOLID com Node.js, Express, TypeScript, Prisma e PostgreSQL",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "nodemon --ext ts --exec ts-node src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.26",
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
