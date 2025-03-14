@@ -24,10 +24,11 @@ O projeto segue uma estrutura de pastas organizada, com cada camada sendo respon
     /entities         # Entidades, ou modelos de dados
   /infrastructure
     /repositories     # Implementações dos repositórios, que interagem com o banco de dados
+    /database
+    /prisma-client    # Configuração do Prisma e modelos de dados
   /interfaces
     /controllers      # Controladores, que recebem as requisições HTTP e chamam os casos de uso
-  /database
-    /prisma-client    # Configuração do Prisma e modelos de dados
+  
   /routes
     /user-routes      # Definição das rotas de usuário
 ```
