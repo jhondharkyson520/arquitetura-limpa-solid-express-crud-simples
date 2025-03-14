@@ -1,9 +1,8 @@
-import { Router } from "express";
 import { UpdateUser } from "../../application/use-cases/update-user";
-import { UserRepository } from "../../infrastructure/repositories/user-repository";
 import { Request, Response } from 'express';
+import { PrismaUserRepository } from "../../infrastructure/repositories/prisma-user-repository";
 
-const userRepository = new UserRepository();
+const userRepository = new PrismaUserRepository();
 const updateUser = new UpdateUser(userRepository);
 /*
         export const updateUserController = Router();

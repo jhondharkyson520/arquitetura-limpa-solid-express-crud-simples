@@ -1,9 +1,8 @@
-import { Router } from "express";
 import { DeleteUser } from "../../application/use-cases/delete-user";
-import { UserRepository } from "../../infrastructure/repositories/user-repository";
 import { Request, Response } from 'express';
+import { PrismaUserRepository } from "../../infrastructure/repositories/prisma-user-repository";
 
-const userRepository = new UserRepository();
+const userRepository = new PrismaUserRepository();
 const deleteUser = new DeleteUser(userRepository);
 
 /*      export const deleteUserController = Router();

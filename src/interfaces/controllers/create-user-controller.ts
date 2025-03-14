@@ -1,8 +1,8 @@
 import { CreateUser } from "../../application/use-cases/create-user";
-import { UserRepository } from "../../infrastructure/repositories/user-repository";
+import { PrismaUserRepository } from "../../infrastructure/repositories/prisma-user-repository";
 import { Request, Response } from 'express';
 
-const userRepository = new UserRepository();
+const userRepository = new PrismaUserRepository();
 const createUser = new CreateUser(userRepository);
 /*
         export const createUserController = Router();

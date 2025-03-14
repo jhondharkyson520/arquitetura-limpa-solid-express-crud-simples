@@ -1,9 +1,8 @@
-import { Router } from "express";
 import { GetUsers } from "../../application/use-cases/get-users";
-import { UserRepository } from "../../infrastructure/repositories/user-repository";
 import { Request, Response } from 'express';
+import { PrismaUserRepository } from "../../infrastructure/repositories/prisma-user-repository";
 
-const userRepository = new UserRepository();
+const userRepository = new PrismaUserRepository();
 const getUsers = new GetUsers(userRepository);
 
 /*
